@@ -1,0 +1,37 @@
+l1-1: skanowanie katalogu i liczenie poszczegolnych typow obiektow w katalogu.
+
+l1-2: skanowanie katalogu i liczenie poszczegolnych typow obiektow w katalogu + zmiana katalogow.
+
+l1-3: rekurencyjne przeszokiwanie katalogow z uzyciem walk
+
+prog12: tworzenie pliku, ustawianie uprawnien, ustawianie kursora i losowanie liter, wsstawianie ich. do tego getopt i unlink 
+usage!!!
+prog14: bulk read, bulk write, niskopoziomowe kopiowanie jednego pliku do drugiego
+
+readv i writev: uzycie iovec.
+
+sop-dika: bulkread, bulkwrite:
+1. wczytywanie opcji od uzytkownika, wczytanie sciezki od uzytkownika do bufora, obsluga opcji.
+2. jesli to plik, to wyswietla jego rozmiar i zawartosc. jesli to katalog to wyswietla pliki z tego katalogu.
+3. dopisuje na koniec pliku nowa zawartosc niskopoziomowo.
+4. wyswietla rekurencyjnie zawartosc katalogu i wypisuje jego typ.
+
+zadanie1:
+1. wyswietla liste plikow z sciezki
+2. wyswietla liste plikow z sciezki i ich wielkosc.
+3. wyswietla liste plikow z sciezki i ich wielkosc, obsluguje kilka sciezek na raz.
+4. wyswietla liste plikow z sciezki i ich wielkosc, obsluguje kilka sciezek na raz i zapisuje output do pliku.
+5. wyswietla liste plikow z sciezki i ich wielkosc, obsluguje kilka sciezek na raz i zapisuje output do pliku niskopoziomowo
+6. dodaje obsluge bledow.
+
+zadanie2: 
+1. wyswietla liste plikow z sciezki i ich wielkosc, obsluguje kilka sciezek na raz.
+2. dodaje filtrowanie po typie pliku
+3. dodaje glebokosc wyswietlania i walk.
+4. dodaje wypisywanie do pliku wskazywanego przez zmienna srodowiskowa.
+
+zadaniefr (czyli 3):
+1. tworzy katalog i plik w nim.
+2. tworzy plik o nazwie zmiennej srodowiskowej i wypelnia go losowo, do pliku wpisuje nazwe zmiennej i jej wartosc.
+3. dodaje obluge kilku zmiennych na raz (dobrze u mazulisa tez jest)
+4. dodaje usuwanie zmiennych srodowiskowych.

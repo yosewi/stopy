@@ -1,0 +1,23 @@
+char *fgets(char *buf, int size, FILE *stream); - wczytuje stream do buf != NULL
+fprintf - fajne dprintf - niskopoziomowe
+atoi - string -> int
+getenv("zmienna srodowiskowa) != NULL
+putenv("zmienna=cos) != 0
+setenv(cos, cos, 1)
+strtol(arg, (char **)NULL, systemliczbowy) - konwersja string->systemliczbowy
+size_t fwrite(const void *ptr, size_t size, size_t count, FILE *stream); - ptr to co chce zapisac, stream to gdzie 
+strcpy(a,b) kopiuje b do a
+strcmp(a,b) porownuje a z b 0 jak jest takie same
+strrchr(a, b) zwraca wskaznik na ostatnie wysapienie znaku b w a
+mkdir(name, uprawnienia)
+lstat(name, &st) == 0 - cos co sie nazywa name juz istnieje
+snprintf(path, sizeof(path), "%s/requirements", name); //zapisuje do lancucha path tekst
+rmdir - usuwa dira
+strdup(a) tworzy kopie lancucha znakow a.
+strstr(a,b) wyszukuje wystapienie lancucha b w a.
+sscanf(line, "%127s", name) == 1 //wczytuje dane z line do name
+fputc(a,b) wstawia pojedynczy znak a do pliku b
+chmod(path, uprawnienia)
+strncpy(a,b,c) kopiuje max c znakow z b do a.
+strtok(tmp, " \n"); // dzieli linie tak, ze bierzemy nazwe pakietu, bo to dzieli tmp w momencie jak bedzie spacja
+
