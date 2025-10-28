@@ -20,4 +20,5 @@ fputc(a,b) wstawia pojedynczy znak a do pliku b
 chmod(path, uprawnienia)
 strncpy(a,b,c) kopiuje max c znakow z b do a.
 strtok(tmp, " \n"); // dzieli linie tak, ze bierzemy nazwe pakietu, bo to dzieli tmp w momencie jak bedzie spacja
+sprintf(buf, "dfgdb") - zapisuje tekst do bufora
 
