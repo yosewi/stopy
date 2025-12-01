@@ -74,14 +74,14 @@ void child_work(int is_ill_at_start, int k){
         if(got_usr1){
             got_usr1 = 0;
 
-            if(!sick){  // tylko zdrowe dzieci reagują
+            if(!sick){
                 printf("Child[%d]: %d has coughed at me!\n", getpid(), sender_pid);
 
             int r = rand() % 100;
             if(r < p){
                 sick = 1;
             printf("Child[%d] get sick\n", getpid());
-            alarm(k);  // ustaw alarm rodziców
+            alarm(k);
         }
     }
 }
@@ -142,9 +142,9 @@ int main(int argc, char** argv){
         usage(argv[0]);
 
     int t = atoi(argv[1]);
-    int k = atoi(argv[2]);  // jeszcze nie używany (etap 4)
+    int k = atoi(argv[2]);
     int n = atoi(argv[3]);
-    p     = atoi(argv[4]);  // zapis do globalnej
+    p     = atoi(argv[4]);
 
     if(t <= 0 || k <= 0 || n <= 0 || p <= 0)
         usage(argv[0]);
